@@ -6,6 +6,9 @@
 
     <body>
         <h2>Page de test</h2>
+        <?php
+        echo "hello the <strong>world</strong>";
+        ?>
         <p>
             Cette page contient <strong>uniquement</strong> du code HTML.<br/>
 
