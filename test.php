@@ -9,10 +9,16 @@
 <body>
    <?php
 
-   $name="Bob";
-   $firstname="Mike";
-   echo "Salut $name     $firstname .<br>";
-   echo 'Salut ' . $name . " " . $firstname . ' et bienvenue.';
+    $myVar="non";
+    if($myVar=="non"){
+        echo "la variable étant $myVar c'est refusé";
+    }
+    elseif($myVar=="oui"){
+        echo "la réponse étant $myVar vous pouvez entrer";
+    }
+    else{
+        echo "il me faut une réponse";
+    }
 
    ?>
 </body>
