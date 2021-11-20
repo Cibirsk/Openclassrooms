@@ -1,19 +1,15 @@
 <?php
 
-$yourFirstName=$_POST['firstname'];
-$yourName=$_POST['name'];
-$result=$_POST['result'];
+    $recette1=array(
+        "auteur" => "Bob",
+        "nom" => "cassoulet",
+        "temps de preparation" => "2 heures",
+        "niveau d'expérience" => "avancée",
+        "ingrédients" => "haricots, lard, canard"
+    );
 
-switch($result){
-    case 0:
-        echo "pas terrible";
-    break;
 
-    case 20:
-        echo " $yourFirstName tu es magnifique";
-    break;
-
-    default:
-        echo "pas de note cher $yourName";
-}
+    foreach($recette1 as $clef => $value){
+        echo "$clef = $value <br>";
+    }
 ?>
