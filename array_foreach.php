@@ -43,24 +43,35 @@
         "is_enabled" => false 
     ]
     ];
-
 /*
-    foreach($recette1 as $value){
-        echo "C'est $value[auteur] qui a conçu $value[nom] <br>";
-        echo "Cela nécessite un niveau $value[niveau_xp] et vous prendra $value[temps_prep]<br>";
-    }
-*/
-
     echo "<h1>Liste des recettes</h1>";
     
     foreach($recettes as $value){
         if(array_key_exists("is_enabled",$value) && $value["is_enabled"]==true){
             echo "<h3>$value[nom]</h3><br>";
             echo "Créé par: $value[auteur] <br>";
-            echo "Ingrédients: $value[ingrédients]";
+            echo "Ingrédients: $value[ingrédients] <br>";
 
         }
     }
+
+    $monTab=["1er"=>1,"2nd"=>2,"3eme"=>3,"4eme"=>4,"5eme"=>5,"6eme"=>6];
+    foreach($monTab as $key => $value){
+        echo "$key => $value<br>";
+    }
+*/
+    $monTab2=[
+        "fruits"=>["pomme","poire","banane"],
+        "animaux"=>["chien","chat","singe"],
+        "pays"=>["France","Espagne","Allemagne"]
+    ];
+    foreach($monTab2 as $key => $value){
+        echo "<h3>$key</h3> <br>";
+        foreach($value as $valeur){
+            echo "$valeur <br>";
+        }
+    }
+    
 ?>
 
 
