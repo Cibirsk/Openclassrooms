@@ -9,9 +9,14 @@
 <body>
 <?php
 
-$myChain="ceci est un test";
-echo str_replace("c","C",$myChain);
+$monTab=[
+    "fruits"=>["pomme","poire","banane"],
+    "animaux"=>["chien","chat","singe"],
+    "pays"=>["France","Espagne","Allemagne"]
+];
 
+echo sprintf("il y a %s ainsi que %s et enfin %s", 
+$monTab["fruits"][0],$monTab["animaux"][1],$monTab["pays"][0] );
 
 ?>
 </body>
