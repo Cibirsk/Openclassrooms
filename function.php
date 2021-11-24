@@ -9,14 +9,20 @@
 <body>
 <?php
 
-$monTab=[
-    "fruits"=>["pomme","poire","banane"],
-    "animaux"=>["chien","chat","singe"],
-    "pays"=>["France","Espagne","Allemagne"]
+$romanSalad = [
+    'title' => 'Salade Romaine',
+    'recipe' => 'Etape 1 : Lavez la salade ; Etape 2 : euh ...',
+    'author' => 'laurene.castor@exemple.com',
+    'is_enabled' => true,
 ];
 
-echo sprintf("il y a %s ainsi que %s et enfin %s", 
-$monTab["fruits"][0],$monTab["animaux"][1],$monTab["pays"][0] );
+$suhis = [
+    'title' => 'Sushis',
+    'recipe' => 'Etape 1 : du saumon ; Etape 2 : du riz',
+    'author' => 'laurene.castor@exemple.com',
+    'is_enabled' => false,
+];
+
 
 ?>
 </body>
